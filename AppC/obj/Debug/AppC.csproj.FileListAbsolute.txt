@@ -1,1 +1,11 @@
 G:\CMU-III\C#\AppC\AppC\bin\Debug\AppC.exe.config
+G:\CMU-III\AppC\AppC\bin\Debug\AppC.exe.config
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.csprojResolveAssemblyReference.cache
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.FormLogin.resources
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.Properties.Resources.resources
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.csproj.GenerateResource.Cache
+G:\CMU-III\AppC\AppC\bin\Debug\AppC.exe
+G:\CMU-III\AppC\AppC\bin\Debug\AppC.pdb
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.exe
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.pdb
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.FormData.resources

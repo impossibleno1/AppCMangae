@@ -78,6 +78,7 @@
             this.btnlogin.TabIndex = 4;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // txtpassword
             // 
@@ -101,6 +102,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormLogin";
             this.Text = "FormLogin";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
