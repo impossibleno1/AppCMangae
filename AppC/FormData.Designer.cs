@@ -28,24 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datagridview1 = new System.Windows.Forms.DataGridView();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matram = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaydangky = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // datagridview1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(718, 344);
-            this.dataGridView1.TabIndex = 1;
+            this.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridview1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.fullname,
+            this.diachi,
+            this.matram,
+            this.ngaydangky,
+            this.ngayhethan});
+            this.datagridview1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datagridview1.Location = new System.Drawing.Point(0, 28);
+            this.datagridview1.Name = "datagridview1";
+            this.datagridview1.RowTemplate.Height = 24;
+            this.datagridview1.Size = new System.Drawing.Size(647, 305);
+            this.datagridview1.TabIndex = 1;
             // 
             // menuStrip2
             // 
@@ -56,7 +69,7 @@
             this.settingsToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(718, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(647, 28);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -78,16 +91,53 @@
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
+            // STT
+            // 
+            this.STT.DataPropertyName = "STT";
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // fullname
+            // 
+            this.fullname.DataPropertyName = "fullname";
+            this.fullname.HeaderText = "Họ và tên";
+            this.fullname.Name = "fullname";
+            // 
+            // diachi
+            // 
+            this.diachi.DataPropertyName = "diachi";
+            this.diachi.HeaderText = "Địa chỉ";
+            this.diachi.Name = "diachi";
+            // 
+            // matram
+            // 
+            this.matram.DataPropertyName = "matram";
+            this.matram.HeaderText = "Mã Trạm";
+            this.matram.Name = "matram";
+            // 
+            // ngaydangky
+            // 
+            this.ngaydangky.DataPropertyName = "ngaydangky";
+            this.ngaydangky.HeaderText = "Ngày đăng ký";
+            this.ngaydangky.Name = "ngaydangky";
+            // 
+            // ngayhethan
+            // 
+            this.ngayhethan.DataPropertyName = "ngayhethan";
+            this.ngayhethan.HeaderText = "Ngày hết hạn";
+            this.ngayhethan.Name = "ngayhethan";
+            // 
             // FormData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 372);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(647, 333);
+            this.Controls.Add(this.datagridview1);
             this.Controls.Add(this.menuStrip2);
             this.Name = "FormData";
             this.Text = "FormData";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormData_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -97,10 +147,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datagridview1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fullname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matram;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaydangky;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayhethan;
     }
 }
