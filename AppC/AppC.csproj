@@ -48,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUD\FormCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\FormCreate.Designer.cs">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\FormDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\FormDelete.Designer.cs">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CRUD\FormCreate.resx">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormData.resx">
       <DependentUpon>FormData.cs</DependentUpon>
     </EmbeddedResource>
