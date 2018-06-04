@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Data3ModelStoreContainer" CdmEntityContainer="Data2Entities">
+    <EntitySetMapping Name="data">
+      <EntityTypeMapping TypeName="Data3Model.datum">
+        <MappingFragment StoreEntitySet="data">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="thon" ColumnName="thon" />
+          <ScalarProperty Name="matram" ColumnName="matram" />
+          <ScalarProperty Name="dong" ColumnName="dong" />
+          <ScalarProperty Name="pha" ColumnName="pha" />
+          <ScalarProperty Name="mahieucongto" ColumnName="mahieucongto" />
+          <ScalarProperty Name="ngaykiemdinh" ColumnName="ngaykiemdinh" />
+          <ScalarProperty Name="hankiemdinh" ColumnName="hankiemdinh" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -28,43 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.datagridview1 = new System.Windows.Forms.DataGridView();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crud = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matram = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaydangky = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).BeginInit();
+            this.datagridview1 = new System.Windows.Forms.DataGridView();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sortByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expireAfter1MonthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // datagridview1
-            // 
-            this.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagridview1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.fullname,
-            this.diachi,
-            this.matram,
-            this.ngaydangky,
-            this.ngayhethan});
-            this.datagridview1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datagridview1.Location = new System.Drawing.Point(0, 28);
-            this.datagridview1.Name = "datagridview1";
-            this.datagridview1.RowTemplate.Height = 24;
-            this.datagridview1.Size = new System.Drawing.Size(647, 305);
-            this.datagridview1.TabIndex = 1;
             // 
             // menuStrip2
             // 
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
+            this.crud,
             this.toolsToolStripMenuItem,
             this.settingsToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -73,59 +53,56 @@
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // menuToolStripMenuItem
+            // crud
             // 
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.crud.Name = "crud";
+            this.crud.Size = new System.Drawing.Size(85, 24);
+            this.crud.Text = "Chỉnh sữa";
             // 
             // toolsToolStripMenuItem
             // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sortByToolStripMenuItem,
+            this.expireAfter1MonthToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // settingsToolStripMenuItem
             // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đăngXuấtToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
-            // STT
+            // datagridview1
             // 
-            this.STT.DataPropertyName = "STT";
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
+            this.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridview1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datagridview1.Location = new System.Drawing.Point(0, 28);
+            this.datagridview1.Name = "datagridview1";
+            this.datagridview1.RowTemplate.Height = 24;
+            this.datagridview1.Size = new System.Drawing.Size(647, 305);
+            this.datagridview1.TabIndex = 3;
             // 
-            // fullname
+            // đăngXuấtToolStripMenuItem
             // 
-            this.fullname.DataPropertyName = "fullname";
-            this.fullname.HeaderText = "Họ và tên";
-            this.fullname.Name = "fullname";
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
-            // diachi
+            // sortByToolStripMenuItem
             // 
-            this.diachi.DataPropertyName = "diachi";
-            this.diachi.HeaderText = "Địa chỉ";
-            this.diachi.Name = "diachi";
+            this.sortByToolStripMenuItem.Name = "sortByToolStripMenuItem";
+            this.sortByToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
+            this.sortByToolStripMenuItem.Text = "Sort By";
             // 
-            // matram
+            // expireAfter1MonthToolStripMenuItem
             // 
-            this.matram.DataPropertyName = "matram";
-            this.matram.HeaderText = "Mã Trạm";
-            this.matram.Name = "matram";
-            // 
-            // ngaydangky
-            // 
-            this.ngaydangky.DataPropertyName = "ngaydangky";
-            this.ngaydangky.HeaderText = "Ngày đăng ký";
-            this.ngaydangky.Name = "ngaydangky";
-            // 
-            // ngayhethan
-            // 
-            this.ngayhethan.DataPropertyName = "ngayhethan";
-            this.ngayhethan.HeaderText = "Ngày hết hạn";
-            this.ngayhethan.Name = "ngayhethan";
+            this.expireAfter1MonthToolStripMenuItem.Name = "expireAfter1MonthToolStripMenuItem";
+            this.expireAfter1MonthToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
+            this.expireAfter1MonthToolStripMenuItem.Text = "Expire after 1 month";
             // 
             // FormData
             // 
@@ -136,10 +113,9 @@
             this.Controls.Add(this.menuStrip2);
             this.Name = "FormData";
             this.Text = "FormData";
-            this.Load += new System.EventHandler(this.FormData_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,16 +123,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView datagridview1;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crud;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fullname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn matram;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaydangky;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayhethan;
+        private System.Windows.Forms.DataGridView datagridview1;
+        private System.Windows.Forms.ToolStripMenuItem sortByToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem expireAfter1MonthToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
     }
 }

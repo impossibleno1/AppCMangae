@@ -16,24 +16,17 @@ namespace AppC
         public FormData()
         {
             InitializeComponent();
+            this.Load += new EventHandler(FormData_Load);
         }
-        SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-7ITNCUT\SQLEXPRESS;Initial Catalog=demologin;Integrated Security=True");
-        private void ketnoicsdl()
+        void FormData_Load(object sender, EventArgs e)
         {
-            cnn.Open();
-            string sql = "select * from data";  // lay het du lieu trong bang sinh vien
-            SqlCommand com = new SqlCommand(sql, cnn); //bat dau truy van
-            com.CommandType = CommandType.Text;
-            SqlDataAdapter da = new SqlDataAdapter(com); //chuyen du lieu ve
-            DataTable dt = new DataTable(); //tạo một kho ảo để lưu trữ dữ liệu
-            da.Fill(dt);  // đổ dữ liệu vào kho
-            cnn.Close();  // đóng kết nối
-            datagridview1.DataSource = dt; //đổ dữ liệu vào datagridview
+            this.LoadDataList();// Load du lieu data tu database
         }
-
-        private void FormData_Load(object sender, EventArgs e)
+        private void LoadDataList()
         {
-            ketnoicsdl();
+            Data2Entities db = new Data2Entities(); 
+            datagridview1.DataSource = db.data.ToList(); //Load dữ liệu từ database
         }
+        
     }
 }
