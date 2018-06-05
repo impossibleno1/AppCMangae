@@ -12,7 +12,7 @@ namespace AppC
     using System;
     using System.Collections.Generic;
     
-    public partial class datum
+    public partial class data2
     {
         public int STT { get; set; }
         public string fullname { get; set; }
@@ -21,8 +21,10 @@ namespace AppC
         public string dong { get; set; }
         public string pha { get; set; }
         public string mahieucongto { get; set; }
-        public System.DateTime ngaykiemdinh { get; set; }
-        public System.DateTime hankiemdinh { get; set; }
+        public Nullable<System.DateTime> ngaykiemdinh { get; set; }
+        public Nullable<System.DateTime> hankiemdinh { get; set; }
         public string ghichu { get; set; }
+
+        public string stt { get; set; }
     }
 }

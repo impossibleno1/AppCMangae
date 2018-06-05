@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DataCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="data2">
+          <Key>
+            <PropertyRef Name="STT" />
+          </Key>
+          <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="thon" Type="nvarchar" MaxLength="20" />
+          <Property Name="matram" Type="nvarchar" MaxLength="20" />
+          <Property Name="dong" Type="nvarchar" MaxLength="20" />
+          <Property Name="pha" Type="nvarchar" MaxLength="20" />
+          <Property Name="mahieucongto" Type="nvarchar" MaxLength="20" />
+          <Property Name="ngaykiemdinh" Type="datetime" />
+          <Property Name="hankiemdinh" Type="datetime" />
+          <Property Name="ghichu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="DataCModelStoreContainer">
+          <EntitySet Name="data2" EntityType="Self.data2" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="data2">
+          <Key>
+            <PropertyRef Name="STT" />
+          </Key>
+          <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="thon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="matram" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="dong" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="pha" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="mahieucongto" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ngaykiemdinh" Type="DateTime" Precision="3" />
+          <Property Name="hankiemdinh" Type="DateTime" Precision="3" />
+          <Property Name="ghichu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DataCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="data2" EntityType="Self.data2" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataCModelStoreContainer" CdmEntityContainer="DataCEntities">
+          <EntitySetMapping Name="data2">
+            <EntityTypeMapping TypeName="DataCModel.data2">
+              <MappingFragment StoreEntitySet="data2">
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="fullname" ColumnName="fullname" />
+                <ScalarProperty Name="thon" ColumnName="thon" />
+                <ScalarProperty Name="matram" ColumnName="matram" />
+                <ScalarProperty Name="dong" ColumnName="dong" />
+                <ScalarProperty Name="pha" ColumnName="pha" />
+                <ScalarProperty Name="mahieucongto" ColumnName="mahieucongto" />
+                <ScalarProperty Name="ngaykiemdinh" ColumnName="ngaykiemdinh" />
+                <ScalarProperty Name="hankiemdinh" ColumnName="hankiemdinh" />
+                <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

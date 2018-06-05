@@ -12,3 +12,5 @@ G:\CMU-III\AppC\AppC\obj\Debug\AppC.FormData.resources
 G:\CMU-III\AppC\AppC\obj\Debug\AppC.CRUD.FormCreate.resources
 G:\CMU-III\AppC\AppC\bin\Debug\EntityFramework.dll
 G:\CMU-III\AppC\AppC\bin\Debug\EntityFramework.xml
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.FormSettings.resources
+G:\CMU-III\AppC\AppC\obj\Debug\AppC.exe.licenses

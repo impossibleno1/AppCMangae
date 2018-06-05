@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Data22ModelStoreContainer" CdmEntityContainer="Data2Entities">
+  <EntityContainerMapping StorageEntityContainer="DataCModelStoreContainer" CdmEntityContainer="DataCEntities">
     <EntitySetMapping Name="data2">
-      <EntityTypeMapping TypeName="Data22Model.data2">
+      <EntityTypeMapping TypeName="DataCModel.data2">
         <MappingFragment StoreEntitySet="data2">
           <ScalarProperty Name="STT" ColumnName="STT" />
           <ScalarProperty Name="fullname" ColumnName="fullname" />

@@ -13,10 +13,10 @@ namespace AppC
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Data2Entities : DbContext
+    public partial class DataCEntities : DbContext
     {
-        public Data2Entities()
-            : base("name=Data2Entities")
+        public DataCEntities()
+            : base("name=DataCEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace AppC
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<datum> data { get; set; }
+        public DbSet<data2> data2 { get; set; }
     }
 }

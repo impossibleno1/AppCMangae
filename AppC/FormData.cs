@@ -17,6 +17,7 @@ namespace AppC
         {
             InitializeComponent();
             this.Load += new EventHandler(FormData_Load);
+            this.mn_crud.Click += new EventHandler(mn_crud_Click);
         }
         void FormData_Load(object sender, EventArgs e)
         {
@@ -24,9 +25,19 @@ namespace AppC
         }
         private void LoadDataList()
         {
-            Data2Entities db = new Data2Entities(); 
-            datagridview1.DataSource = db.data.ToList(); //Load dữ liệu từ database
+            DataCEntities db = new DataCEntities(); 
+            datagridview1.DataSource = db.data2.ToList(); //Load dữ liệu từ database
         }
+
+        private void mn_crud_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSettings Add = new FormSettings();
+            Add.ShowDialog();
+            this.Close();
+        }
+
+
         
     }
 }
